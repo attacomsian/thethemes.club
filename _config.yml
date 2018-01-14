@@ -1,0 +1,57 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: The Themes Club
+
+description: >- # this means to ignore newlines until "baseurl:"
+  The ultimate showcase of best WordPress themes for every need, organized
+  by industry, style and feature. Quickly find the perfect WordPress themes
+  for your business or personal use.
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://thethemes.club" # the base hostname & protocol for your site, e.g. http://example.com
+encoding:       UTF-8
+
+permalink: pretty
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-redirect-from
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Social / Contribute
+twitter: attaomsian
+github:  attacomsian
+contribute_link: https://github.com/attacomsian/thethemes.club
+
+social_image_path:  /assets/img/social-image.png
+social_logo_path:   /assets/img/social-logo.png
+
+
+# Exclude from processing.
+exclude:
+  - docs
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
+  - vendor
+
+  #Affiliate links
+affiliates:
+  bluehost:         https://www.bluehost.com/track/wppaid/ttc
+  themeforest:      ?ref=metalogicssoft

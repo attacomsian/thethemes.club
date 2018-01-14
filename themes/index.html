@@ -1,0 +1,37 @@
+---
+layout: default
+title: The Ultimate Showcase of WordPress Themes
+description: The best WordPress themes showcase for everyone.
+---
+
+<section class="lg-section bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto text-center">
+                <h1>{{page.title}}</h1>
+                <p class="lead">{{page.description}}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="lg-section">
+    <div class="container">
+        <div class="row">
+            {% for theme in site.data.themes %}
+            <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
+                <div class="card">
+                    <a href="{{theme.url}}">
+                        <img class="card-img-top img-fluid" src="{{theme.image}}" alt="{{theme.title}}"/>
+                        <div class="card-body ">
+                            <h5 class="card-title">{{theme.title}}</h5>
+                            <p class="card-text small-xl text-muted">{{theme.description}}</p>
+                            <a href="{{theme.url}}" class="btn btn-light btn-sm mt-4">View Themes</a>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
