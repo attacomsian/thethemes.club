@@ -83,7 +83,6 @@ gulp.task('clean', function () {
         // remove extra js files
         '_site/assets/js/app.js',
         '_site/assets/js/bundle.min.js',
-        '_site/assets/js/bs-bundle.min.js',
         // remove extra css files
         '_site/assets/css/style.css', /* TODO: remove css folder too*/
         // remove javascript/*
