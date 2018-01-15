@@ -1,0 +1,47 @@
+{
+  "name": "thethemes-club",
+  "version": "1.0.0",
+  "description": "Best WordPress Themes for Everyone.",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/attacomsian/thethemes-club.git"
+  },
+  "keywords": [
+    "wordpress",
+    "html",
+    "wordpress",
+    "themes"
+  ],
+  "author": "https://github.com/attacomsian",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/attacomsian/thethemes-club/issues"
+  },
+  "homepage": "https://github.com/attacomsian/thethemes-club#readme",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-download": "0.0.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-replace": "^0.6.1",
+    "gulp-shell": "^0.6.5",
+    "gulp-uglify": "^3.0.0",
+    "gulp-uncss": "^1.0.6",
+    "imagemin-gifsicle": "^5.2.0",
+    "imagemin-jpegtran": "^5.0.2",
+    "imagemin-mozjpeg": "^7.0.0",
+    "imagemin-optipng": "^5.2.1",
+    "imagemin-pngquant": "^5.0.1",
+    "mozjpeg": "^5.0.0",
+    "pngquant-bin": "^3.1.1"
+  }
+}

@@ -1,5 +1,6 @@
 _site
 .sass-cache
 .jekyll-metadata
-.idea
-.idea/vcs.xml
+/.idea
+/node_modules
+

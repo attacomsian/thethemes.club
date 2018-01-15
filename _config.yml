@@ -47,11 +47,14 @@ exclude:
   - docs
   - Gemfile
   - Gemfile.lock
+  - Gulpfile.js
+  - package.json
+  - package-lock.json
   - README.md
   - node_modules
   - vendor
 
-  #Affiliate links
+# Affiliate links
 affiliates:
   bluehost:         https://www.bluehost.com/track/wppaid/ttc
-  themeforest:      ?ref=metalogicssoft
+  themeforest:      metalogicssoft

@@ -10,7 +10,12 @@
   {% include icons.html %}
 
   <!--Bootstrap 4 CSS-->
-  <link rel="stylesheet" href="https://dev.kroplet.com/themes/5a5a86d75f3d5c72c10f8316-bootstrap.css">
+
+  {% if jekyll.environment == 'production' %}
+      <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    {% else %}
+      <link href="https://dev.kroplet.com/themes/5a5a86d75f3d5c72c10f8316-bootstrap.css" rel="stylesheet">
+  {% endif %}
 
   <!--Google Fonts-->
   <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
@@ -20,7 +25,6 @@
 
   {% include social.html %}
 
-  <!--Google Analytics-->
   {% if jekyll.environment == 'production' %}
   {% include google-analytics.html %}
   {% endif %}

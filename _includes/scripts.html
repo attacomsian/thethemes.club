@@ -1,6 +1,7 @@
-<!--Include JS files-->
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
-<script defer="" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
-<script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.0.1/feather.min.js"></script>
-<script defer="" src="/assets/js/app.js"></script>
+<!--Include JS Files-->
+{% if jekyll.environment == 'production' %}
+    <script defer src="/assets/js/vendors.min.js"></script>
+{% else %}
+    <script defer src="/assets/js/bundle.min.js"></script>
+    <script defer src="/assets/js/app.js"></script>
+{% endif %}
