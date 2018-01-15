@@ -58,7 +58,25 @@ gulp.task('css', function () {
     return gulp.src('_site/assets/css/bootstrap.min.css')
         .pipe(uncss({
             html: ['_site/**/*.html'],
-            ignore: []
+            ignore: [/\w\.in/,
+                ".fade",
+                ".collapse",
+                ".collapsing",
+                /(#|\.)navbar(\-[a-zA-Z]+)?/,
+                /(#|\.)dropdown(\-[a-zA-Z]+)?/,
+                /(#|\.)(open)/,
+                ".modal",
+                ".modal.fade.in",
+                ".modal-dialog",
+                ".modal-document",
+                ".modal-scrollbar-measure",
+                ".modal-backdrop.fade",
+                ".modal-backdrop.in",
+                ".modal.fade.modal-dialog",
+                ".modal.in.modal-dialog",
+                ".modal-open",
+                ".in",
+                ".modal-backdrop"]
         }))
         .pipe(minifyCss({keepBreaks: false}))
         .pipe(gulp.dest('_site/assets/css/'));
