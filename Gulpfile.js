@@ -15,6 +15,7 @@ var download = require('gulp-download');
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
 var del = require('del');
+var imageResize = require('gulp-image-resize');
 
 // run jekyll in development mode
 gulp.task('jekyll', function () {
@@ -44,7 +45,7 @@ gulp.task('javascript', function () {
 
 // optimize images
 gulp.task('images', function () {
-    return gulp.src('_site/assets/img/**')
+    return gulp.src('_site/assets/img/**/*')
         .pipe(imagemin({
             progressive: true,
             svgoPlugins: [{removeViewBox: false}],
@@ -128,3 +129,24 @@ gulp.task('build', gulp.series('jekyll', 'javascript', 'images', 'css', 'html'))
 
 //deploy to docs
 gulp.task('deploy', gulp.series('jekyll-prod', 'javascript', 'images', 'css', 'html', 'clean', 'copy'));
+
+// set default task to build
+gulp.task('default', gulp.series('build'));
+
+/*Image resizer */
+var resizeImageTasks = [];
+
+[350,800,1200].forEach(function(size) {
+    var resizeImageTask = 'resize_' + size;
+    gulp.task(resizeImageTask, function() {
+        return gulp.src('assets/img/themes/*.{jpg,png,tiff}')
+            .pipe(imageResize({
+                width:  size, /* auto height */
+                upscale: false
+            }))
+            .pipe(gulp.dest('assets/img/themes/' + size + '/'))
+    });
+    resizeImageTasks.push(resizeImageTask);
+});
+
+gulp.task('resize-images', gulp.series(resizeImageTasks));

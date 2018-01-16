@@ -29,9 +29,11 @@
     "gulp": "^4.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-download": "0.0.1",
+    "gulp-image-resize": "^0.13.0",
     "gulp-imagemin": "^4.1.0",
     "gulp-minify-css": "^1.2.4",
     "gulp-minify-html": "^1.0.6",
+    "gulp-pipes": "^0.1.7",
     "gulp-replace": "^0.6.1",
     "gulp-shell": "^0.6.5",
     "gulp-uglify": "^3.0.0",
@@ -41,6 +43,7 @@
     "imagemin-mozjpeg": "^7.0.0",
     "imagemin-optipng": "^5.2.1",
     "imagemin-pngquant": "^5.0.1",
+    "imagemin-webp": "^4.1.0",
     "mozjpeg": "^5.0.0",
     "pngquant-bin": "^3.1.1"
   }
