@@ -6,9 +6,9 @@ layout: default
 <section class="lg-section bg-light">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 mx-auto text-center">
-                <h1 class="text-primary">Best WordPress Themes for Everyone.</h1>
-                <p>
+            <div class="col-md-8 mx-auto text-center">
+                <h1>Best WordPress Themes for Everyone.</h1>
+                <p class="lead">
                     The ultimate showcase of <b>best WordPress themes</b> for every need, organized
                     by <b>industry, style and feature</b>. Quickly find the perfect WordPress themes
                     for your business or personal use.
@@ -25,9 +25,11 @@ layout: default
             <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
                 <div class="card">
                     <a href="{{theme.url}}">
-                        <img class="card-img-top img-fluid" src="/assets/img/themes/350/{{theme.image}}" alt="{{theme.title}}"/>
-                        <div class="card-body ">
-                            <h5 class="card-title">{{theme.title}}</h5>
+                        <img class="card-img-top img-fluid" src="/assets/img/themes/350/{{theme.image}}"
+                             alt="{{theme.title}}"/>
+                        <div class="card-body">
+                            <h5 class="card-title">{{site.data.collections.themes[theme.id].list.size}}+ {{theme.title}} {{
+                                site.current_year }}</h5>
                             <p class="card-text small-xl text-muted">{{theme.description}}</p>
                             <a href="{{theme.url}}" class="btn btn-light btn-sm mt-4">View Themes</a>
                         </div>
@@ -35,6 +37,13 @@ layout: default
                 </div>
             </div>
             {% endfor %}
+        </div>
+        <div class="row mt-5">
+            <div class="col-sm-12 text-center">
+                <a href="/themes" class="btn btn-outline-dark">
+                    View All Collections
+                </a>
+            </div>
         </div>
     </div>
 </section>

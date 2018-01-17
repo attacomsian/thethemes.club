@@ -10,7 +10,7 @@ var gifsicle = require('imagemin-gifsicle');
 var optipng = require('imagemin-optipng');
 var replace = require('gulp-replace');
 var fs = require('fs');
-var request = require('request')
+var request = require('request');
 var download = require('gulp-download');
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
@@ -59,25 +59,16 @@ gulp.task('css', function () {
     return gulp.src('_site/assets/css/bootstrap.min.css')
         .pipe(uncss({
             html: ['_site/**/*.html'],
-            ignore: [/\w\.in/,
-                ".fade",
-                ".collapse",
-                ".collapsing",
-                /(#|\.)navbar(\-[a-zA-Z]+)?/,
-                /(#|\.)dropdown(\-[a-zA-Z]+)?/,
-                /(#|\.)(open)/,
-                ".modal",
-                ".modal.fade.in",
-                ".modal-dialog",
-                ".modal-document",
-                ".modal-scrollbar-measure",
-                ".modal-backdrop.fade",
-                ".modal-backdrop.in",
-                ".modal.fade.modal-dialog",
-                ".modal.in.modal-dialog",
-                ".modal-open",
-                ".in",
-                ".modal-backdrop"]
+            ignore: [
+                /fade/,
+                /active/,
+                /show/,
+                /collaps/,
+                /navbar/,
+                /dropdown/,
+                /tooltip/,
+                /popover/,
+                /modal/]
         }))
         .pipe(minifyCss({keepBreaks: false}))
         .pipe(gulp.dest('_site/assets/css/'));
@@ -136,12 +127,12 @@ gulp.task('default', gulp.series('build'));
 /*Image resizer */
 var resizeImageTasks = [];
 
-[350,800,1200].forEach(function(size) {
+[350, 800].forEach(function (size) {
     var resizeImageTask = 'resize_' + size;
-    gulp.task(resizeImageTask, function() {
+    gulp.task(resizeImageTask, function () {
         return gulp.src('assets/img/themes/*.{jpg,png,tiff}')
             .pipe(imageResize({
-                width:  size, /* auto height */
+                width: size, /* auto height */
                 upscale: false
             }))
             .pipe(gulp.dest('assets/img/themes/' + size + '/'))

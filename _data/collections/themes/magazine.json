@@ -1,0 +1,21 @@
+{
+  "date": "2018-01-17 10:30:00 +0000",
+  "list": [
+    {
+      "title": "Newspaper",
+      "description": "Newspaper is a WordPress theme that lets you write articles and blog posts with ease. We offer great support and friendly help! The Newspaper template is excellent for a news, newspaper, magazine, publishing or review site. It also supports videos from YouTube and features a rating system. So far, we have the theme integrated with bbPress Forum, BuddyPress, Buddy Press, and WooCommerce. It uses the best clean SEO practices, and on top of that, it’s fast, simple, and easy to use. In addition, Newspaper supports responsive Google Ads and AdSense.",
+      "image": "newspaper8.png",
+      "buy_url": "https://themeforest.net/item/newspaper/5489609?ref=metalogicssoft",
+      "demo_url": "https://themeforest.net/item/newspaper/full_screen_preview/5489609?ref=metalogicssoft",
+      "featured": true
+    },
+    {
+      "title": "Divi",
+      "description": "Divi is powered by the Divi Builder, an insanely fast and incredibly intuitive front end editor like nothing you have seen before. It will change the way you build websites forever. Divi comes with over 20 pre-made layouts right out of the box. These beautiful layouts can be used to jump-start your new projects, allowing you to build new pages in just a matter of minutes. Load them up, swap out the content and you are good to go! They are also a great way for new customers to learn the ins and outs of the Divi Builder.",
+      "image": "divi.png",
+      "buy_url": "http://www.elegantthemes.com/affiliates/idevaffiliate.php?id=35168&url=39309",
+      "demo_url": "http://www.elegantthemes.com/affiliates/idevaffiliate.php?id=35168&url=39310",
+      "featured": true
+    }
+  ]
+}

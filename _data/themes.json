@@ -1,9 +1,26 @@
 [
   {
-    "title": "10+ Best Magazine WordPress Themes 2018",
-    "description": "Best Magazine WordPress themes 2018",
+    "id":"magazine",
+    "title": "Best Magazine WordPress Themes",
+    "description": "A collection of the best WordPress themes for blogging & news sites.",
     "image": "newspaper8.png",
-    "url": "/themes/best-magazine-wordpress-themes",
-    "date": "2017-01-13T07:20+00:00"
+    "url": "/themes/best-news-wordpress-themes",
+    "date": "2018-01-17 10:30:00 +0000"
+  },
+  {
+    "id":"blog",
+    "title": "Best Personal Blog WordPress Themes",
+    "description": "A collection of the best WordPress themes for personal, travel & photography.",
+    "image": "javelin.png",
+    "url": "/themes/best-personal-blog-wordpress-themes",
+    "date": "2018-01-17 10:30:00 +0000"
+  },
+  {
+    "id":"creative",
+    "title": "Best Creative WordPress Themes",
+    "description": "A collection of the best WordPress themes for creative sites.",
+    "image": "rife.png",
+    "url": "/themes/best-creative-wordpress-themes",
+    "date": "2018-01-17 10:30:00 +0000"
   }
 ]

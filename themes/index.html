@@ -1,13 +1,13 @@
 ---
 layout: default
-title: The Ultimate Showcase of WordPress Themes
-description: The best WordPress themes showcase for everyone.
+title: The Ultimate Showcase of WordPress Themes 2018
+description: Browse our collections of the best WordPress themes, organised by industry, style, and feature. Quickly find the perfect WordPress theme.
 ---
 
 <section class="lg-section bg-light">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 mx-auto text-center">
+            <div class="col-md-8 mx-auto text-center">
                 <h1>{{page.title}}</h1>
                 <p class="lead">{{page.description}}</p>
             </div>
@@ -22,9 +22,10 @@ description: The best WordPress themes showcase for everyone.
             <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
                 <div class="card">
                     <a href="{{theme.url}}">
-                        <img class="card-img-top img-fluid" src="/assets/img/themes/350/{{theme.image}}" alt="{{theme.title}}"/>
-                        <div class="card-body ">
-                            <h5 class="card-title">{{theme.title}}</h5>
+                        <img class="card-img-top img-fluid" src="/assets/img/themes/350/{{theme.image}}"
+                             alt="{{theme.title}}"/>
+                        <div class="card-body">
+                            <h5 class="card-title">{{site.data.collections.themes[theme.id].list.size}}+ {{theme.title}} {{ site.current_year }}</h5>
                             <p class="card-text small-xl text-muted">{{theme.description}}</p>
                             <a href="{{theme.url}}" class="btn btn-light btn-sm mt-4">View Themes</a>
                         </div>

@@ -22,8 +22,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://thethemes.club" # the base hostname & protocol for your site, e.g. http://example.com
-encoding:       UTF-8
-
+encoding: UTF-8
 permalink: pretty
 
 # Build settings
@@ -41,7 +40,6 @@ contribute_link: https://github.com/attacomsian/thethemes.club
 social_image_path:  /assets/img/social-image.png
 social_logo_path:   /assets/img/social-logo.png
 
-
 # Exclude from processing.
 exclude:
   - docs
@@ -58,3 +56,6 @@ exclude:
 affiliates:
   bluehost:         https://www.bluehost.com/track/wppaid/ttc
   themeforest:      metalogicssoft
+
+#Extra
+current_year: 2018

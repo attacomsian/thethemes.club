@@ -4,6 +4,11 @@ $(function () {
     // init feather icons
     feather.replace();
 
+    //tooltip
+    $('body').tooltip({
+        selector: '[data-toggle="tooltip"]'
+    });
+
     //page scroll
     $('a.page-scroll').bind('click', function (event) {
         var $anchor = $(this);

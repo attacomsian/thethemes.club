@@ -1,14 +1,48 @@
 ---
 layout: default
 ---
-<article class="post">
+<!--header section-->
+<section class="md-section bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mx-auto text-center">
+                <h1>{{site.data.collections[page.group][page.id].list.size}}+ {{ page.title | escape }}
+                    {{site.current_year}}</h1>
+                <p class="lead">{{page.description}}</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title | escape }}</h1>
-  </header>
-
-  <div class="post-content">
-    {{ content }}
-  </div>
-
-</article>
+<!--themes section-->
+<section class="lg-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                {% for theme in site.data.collections[page.group][page.id].list %}
+                <div class="mb-5">
+                    <h3>{{theme.title}}</h3>
+                    <p>
+                        <a href="{{theme.buy_url}}" target="_blank" rel="nofollow">
+                            <img class="img-fluid img-thumbnail" src="/assets/img/themes/800/{{theme.image}}"
+                                 alt="{{theme.title}}"/>
+                        </a>
+                    </p>
+                    <div class="my-4">{{theme.description}}</div>
+                    <div>
+                        <a href="{{theme.buy_url}}" class="btn btn-primary" target="_blank" rel="nofollow">
+                            Download
+                        </a>
+                        <a href="{{theme.demo_url}}" class="btn btn-outline-primary mx-2" target="_blank" rel="nofollow">
+                            Demo
+                        </a>
+                        <a href="{{site.affiliates.bluehost}}" class="btn btn-secondary" target="_blank" rel="nofollow">
+                            Get Hosting
+                        </a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
